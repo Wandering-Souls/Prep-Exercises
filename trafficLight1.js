@@ -13,7 +13,7 @@ while (rotations < 2) {
     trafficLight.state = "orange";
   } else if (currentState == "orange") {
     trafficLight.state = "red";
-  } else if (currentState == "red") {
+  } else {
     trafficLight.state = "green";
     rotations++;
   }
