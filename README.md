@@ -1,9 +1,9 @@
 
 
-### Prep-exercises
+## Prep-exercises
 This repository includes exercises of javascript HYF program.
 
-# Week 2
+## Week 2
 
 - Which way of representing the traffic light did you find better? Why?
 I find the second the way better especially if we have many states, it makes our code shorter and easy to understand.
@@ -12,3 +12,7 @@ I tried the exercise with do-while loop and there was no change in this case,  b
 
 - We could have also used a `for` loop to make the traffic light do 2 full rotations. Do you think that would be better? Why or why not? 
 no idea about this question!
+
+
+## Week 3
+## Week 4
