@@ -1,7 +1,9 @@
 
 
-# Prep-exercises
+### Prep-exercises
 This repository includes exercises of javascript HYF program.
+
+# Week 2
 
 - Which way of representing the traffic light did you find better? Why?
 I find the second the way better especially if we have many states, it makes our code shorter and easy to understand.
