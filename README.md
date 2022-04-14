@@ -9,18 +9,19 @@ This repository includes exercises of javascript HYF program.
 - What happens if you change the loop to a do-while loop instead of a while loop? Why?  
   I tried the exercise with do-while loop and there was no change in this case, but in general it's better to not use do-while loop because even if the condition is not met do-while loop runs at least once as it evaluates the loop condition at the end of the loop.
 
-- We could have also used a `for` loop to make the traffic light do 2 full rotations. Do you think that would be better? Why or why not?   
-**No!**
+- We could have also used a `for` loop to make the traffic light do 2 full rotations. Do you think that would be better? Why or why not?  
+  **No!**
   `While` loop and `for` loop both have the same performance, the main differences are their syntax and the way they work.
 
 ## Week 3
 
-
-- This time the loop was changed to a for loop that will run the code 6 times. Why was that needed?
+- This time the loop was changed to a for loop that will run the code 6 times. Why was that needed?  
+  In order to get two cycles, we need to run the codes 6 times as we have have 3 states. I think running a loop through the currentStates is more clear and straightforward for representing the way that traffic light works rather than writing a conditional statement for each state.
 - Why was the trafficLight added to the `main` function and not left at the top of the file?
-- What do you think is the advantage of having the `getCurrentTrafficLightState` and `getNextStateIndex` functions?
-- The `valueCounts` is implemented as an array. Do you think there is another way to store this? Why do you think the decision was made to go with an array?
+- What do you think is the advantage of having the `getCurrentTrafficLightState` and `getNextStateIndex` functions?  
+  Using functions make it clear what the codes do in each function, in other word, we can see the functionality of group of codes included in that specific section/function so the codes are **self- documenting**!. Also we can call them in different part of the project.
+- The `valueCounts` is implemented as an array. Do you think there is another way to store this? Why do you think the decision was made to go with an array?  
+  I think this was an easy way of sorting the data but we could also use object and give a key name to each group of values. Also working with an array is easier than working with an object.
 - What do you think about the code division? Would you add another function or maybe remove one? Why?
-
 
 ## Week 4
