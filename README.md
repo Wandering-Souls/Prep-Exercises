@@ -21,7 +21,7 @@ This repository includes exercises of javascript HYF program.
 - What do you think is the advantage of having the `getCurrentTrafficLightState` and `getNextStateIndex` functions?  
   Using functions make it clear what the codes do in each function, in other word, we can see the functionality of group of codes included in that specific section/function so the codes are **self- documenting**!. Also we can call them in different part of the project.
 - The `valueCounts` is implemented as an array. Do you think there is another way to store this? Why do you think the decision was made to go with an array?  
-  I think this was an easy way of sorting the data but we could also use object and give a key name to each group of values. Also working with an array is easier than working with an object.
+  I think using an array makes it easy to loop through the `valueCounts` in the following step.
 - What do you think about the code division? Would you add another function or maybe remove one? Why?
 
 ## Week 4
