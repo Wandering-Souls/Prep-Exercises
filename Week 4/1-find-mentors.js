@@ -27,7 +27,8 @@ console.log(possibleMentorsForModule("using-apis"));
  */
 const findMentorForModule = (moduleName) => {
   // TODO complete this function
-  const randomMentor = possibleMentorsForModule[Math.floor(Math.random() * possibleMentorsForModule)];
+  const findMentor = possibleMentorsForModule(moduleName);
+  const randomMentor = findMentor[Math.floor(Math.random() * findMentor.length)];
   return randomMentor;
 };
 
