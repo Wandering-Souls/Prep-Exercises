@@ -25,7 +25,7 @@ const getPeopleOfClass = (className) => {
 
   const studentsOfTheClass = students
     .filter((student) => student.class === className)
-    .map((student) => `{name: student.name, role: 'student'}`);
+    .map((student) => `{name: ${student.name} , role: 'student'}`);
   const classParticipants = [studentsOfTheClass,  mentorTeachesModule];
   return classParticipants;
 };
