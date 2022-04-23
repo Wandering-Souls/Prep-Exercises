@@ -1,4 +1,4 @@
-import { modules, students, mentors, classes } from "./hyf";
+import { modules, students, mentors, classes } from "./hyf.js";
 
 /**
  * Tjebbe would like help to get a list of possible mentors for a module.
@@ -9,9 +9,15 @@ import { modules, students, mentors, classes } from "./hyf";
  */
 const possibleMentorsForModule = (moduleName) => {
   // TODO complete this function
+
+  const mentorsForTeaching = mentors
+    .filter((mentor) => mentor.canTeach.includes(moduleName))
+    .map((mentor) => mentor.name);
+
+  return mentorsForTeaching;
 };
-// You can uncomment out this line to try your function
-// console.log(possibleMentorsForModule('using-apis'));
+
+console.log(possibleMentorsForModule("using-apis"));
 
 /**
  * Tjebbe wants to make it even easier for himself.
