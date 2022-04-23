@@ -28,8 +28,9 @@ console.log(possibleMentorsForModule("using-apis"));
 const findMentorForModule = (moduleName) => {
   // TODO complete this function
   const findMentor = possibleMentorsForModule(moduleName);
-  const randomMentor = findMentor[Math.floor(Math.random() * findMentor.length)];
+  const randomMentor =
+    findMentor[Math.floor(Math.random() * findMentor.length)];
   return randomMentor;
 };
 
- console.log(findMentorForModule('javascript'));
+console.log(findMentorForModule("javascript"));
