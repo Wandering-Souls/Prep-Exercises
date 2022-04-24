@@ -14,19 +14,26 @@ import { modules, students, mentors, classes } from "./hyf.js";
 const getPeopleOfClass = (className) => {
   // TODO complete this function
 
-  //const classLabel = classes.filter(eachClass => eachClass.name === className);
-  const currentModuleOfTheClass = classes
-    .filter((eachClass) => eachClass.name === className)
-    .map((eachClass) => eachClass.currentModule);
+  const getTheClassName = classes.filter(
+    (eachClass) => eachClass.name === className
+  );
+
+  const currentModuleOfTheClass = getTheClassName
+    .map((i) => i.currentModule)
+    .toString();
+  console.log(currentModuleOfTheClass); 
+
+  
 
   const mentorTeachesModule = mentors
     .filter((mentor) => mentor.nowTeaching === currentModuleOfTheClass)
-    .map((mentor) => `{name: ${mentor.name}, role: 'mentor'}`);
+    .map((mentor) => {return { name: mentor.name, role: "student" }});
 
   const studentsOfTheClass = students
     .filter((student) => student.class === className)
-    .map((student) => `{name: ${student.name} , role: 'student'}`);
-  const classParticipants = [studentsOfTheClass,  mentorTeachesModule];
+    .map((student) => {return { name: student.name, role: "student" }});
+    console.log(studentsOfTheClass);
+  const classParticipants = [studentsOfTheClass, mentorTeachesModule];
   return classParticipants;
 };
 // You can uncomment out this line to try your function
