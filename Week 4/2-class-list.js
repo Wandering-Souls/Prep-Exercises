@@ -21,19 +21,20 @@ const getPeopleOfClass = (className) => {
   const currentModuleOfTheClass = getTheClassName
     .map((i) => i.currentModule)
     .toString();
-  console.log(currentModuleOfTheClass); 
-
-  
 
   const mentorTeachesModule = mentors
     .filter((mentor) => mentor.nowTeaching === currentModuleOfTheClass)
-    .map((mentor) => {return { name: mentor.name, role: "student" }});
+    .map((mentor) => {
+      return { name: mentor.name, role: "student" };
+    });
 
   const studentsOfTheClass = students
     .filter((student) => student.class === className)
-    .map((student) => {return { name: student.name, role: "student" }});
-    console.log(studentsOfTheClass);
-  const classParticipants = [studentsOfTheClass, mentorTeachesModule];
+    .map((student) => {
+      return { name: student.name, role: "student" };
+    });
+
+  const classParticipants = [...studentsOfTheClass, ...mentorTeachesModule];
   return classParticipants;
 };
 // You can uncomment out this line to try your function
