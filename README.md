@@ -1,6 +1,6 @@
 ## Prep-exercises
 
-This repository includes exercises of javascript HYF program.
+This repository includes prep exercises of javascript & API module.
 
 ## Week 2
 
