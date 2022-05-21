@@ -1,6 +1,6 @@
 ## Prep-exercises
 
-This repository includes prep exercises of javascript & API module.
+This repository includes prep exercises of JavaScript & API module.
 
 ## Week 2
 
