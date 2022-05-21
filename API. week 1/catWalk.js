@@ -18,7 +18,9 @@ function walk(img, startPos, stopPos) {
   if (positionFromLeft < stopPos){
     positionFromLeft += STEP_SIZE_PX;
     img.style.left = `{positionFromLeft}`;
-  } 
+  } else {
+      resolve(img);
+  }
 }, STEP_INTERVAL_MS)
   });
   
